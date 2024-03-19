@@ -43,10 +43,10 @@
                 <artifactId>sonar-maven-plugin</artifactId>
                 <version>3.11.0.3922</version>
                 <configuration>
-                    <sonar.host.url>http://127.0.0.1:9300</sonar.host.url>
+                    <sonar.host.url>http://127.0.0.1:9000</sonar.host.url>
                     <sonar.projectKey>SpringBoot</sonar.projectKey>
                     <sonar.projectName>SpringBoot</sonar.projectName>
-                    <sonar.login>sqp_ac910ea1d8fa56d25edde5de70eaca6d42b8181e</sonar.login>
+                    <sonar.login>sqp_fca47338aaead714f697d78ddb13dbd5de894ab2</sonar.login>
                 </configuration>
             </plugin>
         </plugins>
