@@ -1,0 +1,22 @@
+package in.myworkspot.tourplanner;
+
+import org.junit.jupiter.api.Test;
+import org.springframework.boot.test.context.SpringBootTest;
+
+import static org.junit.jupiter.api.Assertions.assertTrue;
+
+@SpringBootTest
+public class TourPlannerApplicationTest {
+
+    @Test
+    public void contextLoads() {
+        // Simple test to check if the application context loads successfully
+        assertTrue(true);
+    }
+
+    @Test
+    public void testMainMethod() {
+        // Additional test to check if the main method of the application runs without errors
+        TourPlannerApplication.main(new String[]{});
+    }
+}
