@@ -1,22 +1,24 @@
-/*Change the format and syling convention */
+/* Base styles */
 body {
     font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
+    line-height: 1.6;
 }
 
+/* Container styles */
 .container {
     width: 80%;
     margin: auto;
     overflow: hidden;
 }
 
+/* Header styles */
 header {
     background: #333;
     color: #fff;
-    padding-top: 10px;
-    min-height: 70px;
+    padding: 10px 0;
     border-bottom: #77d5d4 3px solid;
 }
 
@@ -25,25 +27,43 @@ header a {
     text-decoration: none;
     text-transform: uppercase;
     font-size: 16px;
+    transition: color 0.3s;
+}
+
+header a:hover {
+    color: #77d5d4;
 }
 
 header ul {
     padding: 0;
     list-style: none;
+    text-align: right;
+    margin: 0;
 }
 
 header li {
     display: inline;
-    padding: 0 20px 0 20px;
+    padding: 0 20px;
 }
 
+/* Hero section styles */
 .hero {
-    background: #77d5d4;
+    background: linear-gradient(to right, #77d5d4, #5ebbb7);
     color: #fff;
     padding: 60px 0;
     text-align: center;
 }
 
+.hero h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2em;
+}
+
+/* Main content styles */
 main {
     padding: 20px;
     background: #fff;
@@ -51,14 +71,7 @@ main {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-footer {
-    text-align: center;
-    padding: 20px;
-    background: #333;
-    color: #fff;
-    margin-top: 20px;
-}
-
+/* Form styles */
 form {
     display: flex;
     flex-direction: column;
@@ -70,21 +83,38 @@ form label, form input, form select, form textarea, form button {
     font-size: 16px;
 }
 
+form input, form select, form textarea {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
 form button {
     background: #77d5d4;
     color: #fff;
     border: none;
     cursor: pointer;
+    transition: background 0.3s;
 }
 
 form button:hover {
     background: #5ebbb7;
 }
 
+/* Dynamic content section styles */
 #dynamic-content {
     margin-top: 20px;
     padding: 20px;
     background: #f9f9f9;
     border: 1px solid #ddd;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer styles */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #333;
+    color: #fff;
+    margin-top: 20px;
+    border-top: #77d5d4 3px solid;
 }
