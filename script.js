@@ -8,6 +8,8 @@ document.getElementById('tour-planner-form').addEventListener('submit', function
 
     const dynamicContent = document.getElementById('dynamic-content');
 
+    // Added dynamic content configuration mapping 
+
     if (destination && startDate && endDate && details) {
         dynamicContent.innerHTML = `
             <h3>Your Trip Summary</h3>
